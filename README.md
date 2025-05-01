@@ -32,3 +32,16 @@ In this task, we will create a large array of integers (e.g., 10 million element
    - The final sum will also be displayed.
 
 ----
+## Task 2: Parallelism with Threads
+### Objective
+Demonstrate task parallelism using POSIX threads (pthread) in C by applying different arithmetic operations on a shared array concurrently.
+
+### Description
+This program creates a large array of random integers and applies three different operations—addition, subtraction, and multiplication—using three separate threads. Each thread performs a different task on the entire array:
+
+* **Thread 1** adds `+5` to each element.
+* **Thread 2** subtracts `-3` from each element.
+* **Thread 3** multiplies each element by `3`.
+
+This simulates **task parallelism**, where each thread performs a distinct task (as opposed to dividing the data among identical tasks as in data parallelism).
+
